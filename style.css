@@ -17,3 +17,23 @@ h1.blink {
     50% {opacity: 0.35; } 
     75% {opacity: 1; }
 }
+
+body h2 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: red;
+    font-size: 35px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes example {
+    0%   {color:red; left: 0; top: 0;}
+    25%  {color:yellow; left: 90%; top: 0;}
+    50%  {color:blue; left: 90%; top: 200px;}
+    75%  {color:green; left: 0; top: 200px;}
+    100% {color:red; left: 0; top: 0;}
+  }
